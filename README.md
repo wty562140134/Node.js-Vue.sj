@@ -50,7 +50,7 @@
          
           
 ### 安装VUE.js
-1.[查看](https://cn.vuejs.org/v2/guide/installation.html#NPM)最新安装稳定版 -g为全局安装
+1.[查看](https://cn.vuejs.org/v2/guide/installation.html)最新安装稳定版 -g为全局安装
 
     npm install vue -g
 若想安装最新版,先卸载原来已有的版本
@@ -59,15 +59,31 @@
     npm install -g @vue/cli
 
 ## 下载依赖
-安装webpack
+安装webpack,router,vuex
 
     npm install webpack -g
+    vue add router
+    vue add vuex
 构建项目
 
     vue init webpack <projectname>
 cd到项目路径下安装依赖包
     
     vue install 
+    npm run dev
+  若是npm run dev报错,可将项目下的node_modules删除后在使用
+  
+    vue install 
+    npm run dev
+编译项目
+
+    npm run build
   对于快速原型开发使用构建一个全局的扩展(https://cli.vuejs.org/zh/guide/prototyping.html)
   
     npm install -g @vue/cli-service-global
+   创建项目
+    
+    vue create <project_name>   
+   指定端口并启动
+   
+    npm run serve -- --port=<port>
