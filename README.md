@@ -71,13 +71,16 @@ cd到项目路径下安装依赖包
     
     vue install 
     npm run dev
-  若是npm run dev报错,可将项目下的node_modules删除后在使用
-  
-    vue install 
-    npm run dev
 编译项目
 
     npm run build
+若是npm run dev报错,可将项目下的node_modules删除后在使用
+  
+    vue install 
+    npm run dev
+在vue3.X可以使用可视化界面
+
+    vue ui
   对于快速原型开发使用构建一个[全局的扩展](https://cli.vuejs.org/zh/guide/prototyping.html)
   
     npm install -g @vue/cli-service-global
