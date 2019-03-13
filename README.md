@@ -1,9 +1,9 @@
 # Node.js-Vue.sj
 
-## 安装Node.js
-### 使用nvm管理工具管理node.js版本:
+## 配置环境
+### 安装Node.js,使用nvm管理工具管理node.js版本:
 1.  windows:
-    访问[https://github.com/coreybutler/nvm-windows/releases]解压安装后将nvm添加到环境变量中<br>
+    [访问](https://github.com/coreybutler/nvm-windows/releases)解压安装后将nvm添加到环境变量中<br>
     打开控制台输入 nvm -v查看是否安装成功
 2.  linux:
     
@@ -43,11 +43,31 @@
          使用指定版本作为预设使用的 node 版本:
          
           nvm alias default <version>
+         使用淘宝镜像
+          
+          npm install -g cnpm --registry=https://registry.npm.taobao.org
          
          
           
-## 安装VUE.js
-查看[https://cn.vuejs.org/v2/guide/installation.html#NPM]
+### 安装VUE.js
+1.[查看](https://cn.vuejs.org/v2/guide/installation.html#NPM)最新安装稳定版 -g为全局安装
 
-    npm install vue
+    npm install vue -g
+若想安装最新版,先卸载原来已有的版本
+
+    npm uninstall vue-cli -g
+    npm install -g @vue/cli
+
+## 下载依赖
+安装webpack
+
+    npm install webpack -g
+构建项目
+
+    vue init webpack <projectname>
+cd到项目路径下安装依赖包
     
+    vue install 
+  对于快速原型开发使用构建一个全局的扩展(https://cli.vuejs.org/zh/guide/prototyping.html)
+  
+    npm install -g @vue/cli-service-global
