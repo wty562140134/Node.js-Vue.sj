@@ -78,7 +78,7 @@ cd到项目路径下安装依赖包
 编译项目
 
     npm run build
-  对于快速原型开发使用构建一个全局的扩展(https://cli.vuejs.org/zh/guide/prototyping.html)
+  对于快速原型开发使用构建一个[全局的扩展](https://cli.vuejs.org/zh/guide/prototyping.html)
   
     npm install -g @vue/cli-service-global
    创建项目
