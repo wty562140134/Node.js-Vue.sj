@@ -64,7 +64,7 @@
     npm install webpack -g
     vue add router
     vue add vuex
-构建项目
+构建项目(构建的为webpack)
 
     vue init webpack <projectname>
 cd到项目路径下安装依赖包
@@ -84,9 +84,11 @@ cd到项目路径下安装依赖包
   对于快速原型开发使用构建一个[全局的扩展](https://cli.vuejs.org/zh/guide/prototyping.html)
   
     npm install -g @vue/cli-service-global
-   创建项目
+   创建项目，安装依赖，编译（简易轻巧的项目）
     
     vue create <project_name>   
+    npm install 
+    vue build
    指定端口并启动
    
     npm run serve -- --port=<port>
