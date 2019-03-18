@@ -62,14 +62,16 @@
 安装webpack,router,vuex
 
     npm install webpack -g
-    vue add router 或 npm install vue-router
-    vue add vuex 或 npm install vuex --save
+    npm install vue-router
+    npm install vuex --save
 构建项目(构建的为webpack)
 
     vue init webpack <projectname>
 cd到项目路径下安装依赖包
     
-    vue install 
+    vue install
+    vue add router
+    vue add vuex
     npm run dev
 编译项目
 
