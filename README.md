@@ -94,3 +94,17 @@ cd到项目路径下安装依赖包
    指定端口并启动
    
     npm run serve -- --port=<port>
+    
+vue(webpack)常用配置:
+   config/index.js这是vue项目的配置文件
+
+    autoOpenBrowser: false, //运行项目自动打开浏览器
+    host: 'localhost', // 项目ip
+    port: 8080, // 项目启动端口
+   
+   package.json这是NPM用来管理项目包的文件
+    
+    devDependencies:[]
+   是插件列表添加完成需要的插件后使用
+   
+    npm install --save-dev
